@@ -1,0 +1,194 @@
+/* #757575 основний колір тексту */
+/* #212121 колір заголовків */
+/* #FFFFFF колір тексту героя*/
+/* #2196F3 колір акценту */
+/* rgba(255, 255, 255, 0.6); колір в подвалі контактних даних */
+
+/* #E5E5E5 основний колір фону */
+/* #F5F4FA вторинний колір фону сторінки */
+/* #2F303A колір героя и підвалу фону */
+
+/* Roboto 400/500/700/900 основний шоифт */
+/* Raleway  700 додатковий шрифт*/
+:root {
+  --primary-text-color: #757575;
+  --primary-bgc: * #ffffff;
+  --secondary-bgc: #e5e5e5;
+  --title-color: #212121;
+  --acent-color: #2196f3;
+  --title-wite: #ffffff;
+  --button-bgc:#F5F4FA;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+/* прибрати маркера списків сторінки */
+.list {
+  list-style: none;
+}
+/* розмітка HEADER */
+/* оформлення логотипа */
+.logo {
+  /* оформлення тексту */
+  color: var(--title-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  text-decoration: none;
+}
+.logo .logo-blue {
+  color: var(--acent-color);
+}
+/* оформлення навігації */
+.site-nav .site-info {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--title-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+/* оформлення контактів */
+.site-info .site-info-header {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.site-info :hover,
+.site-info :focus {
+  color: var(--acent-color);
+}
+/* оформлення main */
+/* оформлення героя */
+.heroes{
+  background-color: #2F303A;
+}
+.heroes-title {
+  color: var(--title-wite);
+  font-weight: 900;
+  font-size: 44px;
+  Line height:1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.heroes .heroes-button {
+  color: var(--title-wite);
+  background-color: var(--acent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+   font-family: 'Roboto', sans-serif;
+}
+.heroes .heroes-button:focus ,
+.heroes .heroes-button:hover{
+  color:var(--acent-color);;
+  background-color:var(--title-wite); 
+}
+/* оформлення основи */
+.section-title {
+  color: var(--title-color);
+}
+.list .section-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+.list .text {
+font-size: 14px;
+line-height: 1.7;
+}
+.subtitle{
+  line-height: 1.16;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.team .headline{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team .text{
+  font-size: 16px;
+  line-height: 1.18;
+}
+/* оформлення футер */
+.below {
+   background-color: #2F303A;
+}
+.below-logo,
+.location {
+  color: var(--title-wite);
+}
+.below-logo .logo-blue {
+  color: var(--acent-color);
+}
+.below-logo{
+font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.location {
+line-height:1.7;
+font-style: normal;
+}
+.below-link .link {
+  color: rgba(255, 255, 255, 0.6);
+   text-decoration: none;
+   line-height:1.7;
+}
+.below-link :hover ,
+.below-link :focus{
+  color: var(--acent-color);  
+}
+/*сторінка 2 портфоліо */
+/* фильтр */
+.filter .filter-button {
+  color: var(--title-color);
+  background-color:var(--button-bgc) ;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+   font-family: 'Roboto', sans-serif;
+}
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+  color: var(--title-wite);
+  background-color: var(--acent-color);
+}
+/* оформлення  */
+.portfolio  .link{
+   text-decoration: none;
+    color: var(--primary-text-color);
+}
+.link .section-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.link .text {
+  font-size: 16px;
+  line-height: 1.8;
+}
