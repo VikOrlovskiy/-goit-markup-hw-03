@@ -23,26 +23,29 @@
   <body>
     <!-- шапка сайта -->
     <header>
-      <div class="container">
+      <div class="container header-top">
         <a class="logo" href="index.html"
-          ><span class="logo-blue">Web</span>Studio</a
-        >
+          ><span class="logo-blue">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a class="link" href="index.html">Студия</a></li>
-            <li><a class="link" href="portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="index.html">Контакты</a></li>
+            <li class="site-nav-link">
+              <a class="link" href="index.html">Студия</a>
+            </li>
+            <li class="site-nav-link">
+              <a class="link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav-link">
+              <a class="link" href="index.html">Контакты</a>
+            </li>
           </ul>
         </nav>
-      </div>
-      <div class="container">
         <ul class="site-info list">
-          <li>
+          <li class="site-info-contact">
             <a class="site-info-header" href="mailto:info@devstudio.com"
               >info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="site-info-contact">
             <a class="site-info-header" href="tel:+38-096-111-11-11"
               >+38 (096)-111-11-11</a
             >
@@ -61,32 +64,32 @@
         <button class="heroes-button" type="button">Заказать услугу</button>
       </section>
       <!-- Особенности -->
-      <section class="section">
+      <section class="section no-padding">
         <div class="container">
-          <h2 class="section-title">Особенности</h2>
-          <ul class="list">
-            <li>
+          <h2 style="display:none; class="section-title">Особенности</h2>
+          <ul class="text-set list">
+            <li class="text-set-card">
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="text-set-card">
               <h3 class="section-title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="text-set-card">
               <h3 class="section-title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="text-set-card">
               <h3 class="section-title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -97,31 +100,31 @@
         </div>
       </section>
       <!-- Чем ми занимаемся -->
-      <section class="section">
+      <section class="section  no-padding">
         <div class="container">
           <h2 class="section-title subtitle">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="pic-list list">
+            <li class="pic-list-icon">
               <a href="index.html"
                 ><img
                   src="./images/what-we-do-pic.1.jpg"
-                  width="294"
+                  width="370"
                   alt="компьютер за которим работают"
               /></a>
             </li>
-            <li>
+            <li class="pic-list-icon">
               <a href="index.html"
                 ><img
                   src="./images/what-we-do-pic.2.jpg"
-                  width="294"
+                  width="370"
                   alt="телефон на фоне компьютера"
               /></a>
             </li>
-            <li>
+            <li class="pic-list-icon">
               <a href="index.html"
                 ><img
                   src="./images/what-we-do-pic.3.jpg"
-                  width="294"
+                  width="370"
                   alt="вибор цвета"
               /></a>
             </li>
@@ -129,11 +132,11 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="section">
+      <section class="section bgc">
         <div class="container">
-          <h2 class="section-title subtitle">Наша команда</h2>
+          <h2 class="section-title subtitle have-padding">Наша команда</h2>
           <ul class="team list">
-            <li>
+            <li class="team-specialist">
               <img
                 src="./images/founders/founder-1.jpg"
                 width="260"
@@ -142,7 +145,7 @@
               <h3 class="section-title headline">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
             </li>
-            <li>
+            <li class="team-specialist">
               <img
                 src="./images/founders/founder-3.jpg"
                 width="260"
@@ -151,7 +154,7 @@
               <h3 class="section-title headline">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-specialist">
               <img
                 src="./images/founders/founder-4.jpg"
                 width="260"
@@ -160,7 +163,7 @@
               <h3 class="section-title headline">Николай Тарасов</h3>
               <p class="text">Marketing</p>
             </li>
-            <li>
+            <li class="team-specialist">
               <img
                 src="./images/founders/founder-2.jpg"
                 width="260"

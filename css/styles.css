@@ -4,7 +4,7 @@
 /* #2196F3 колір акценту */
 /* rgba(255, 255, 255, 0.6); колір в подвалі контактних даних */
 
-/* #E5E5E5 основний колір фону */
+/* #FFFFFF основний колір фону */
 /* #F5F4FA вторинний колір фону сторінки */
 /* #2F303A колір героя и підвалу фону */
 
@@ -12,8 +12,8 @@
 /* Raleway  700 додатковий шрифт*/
 :root {
   --primary-text-color: #757575;
-  --primary-bgc: * #ffffff;
-  --secondary-bgc: #e5e5e5;
+  --primary-bgc: #ffffff;
+  --secondary-bgc: #f5f4fa;
   --title-color: #212121;
   --acent-color: #2196f3;
   --title-wite: #ffffff;
@@ -36,23 +36,30 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-/* упаковка контейнер під дів */
+/* упаковка контейнер */
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  outline: 1px solid rgb(76, 0, 255);
 }
+/* загальне вимога по ТЗ */
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
+  outline: 1px solid red;
 }
 /* прибрати маркера списків сторінки */
 .list {
   list-style: none;
 }
 /* розмітка HEADER */
+.header-top {
+  display: flex;
+  align-items: center;
+}
 /* оформлення логотипа */
 .logo {
   /* оформлення тексту */
@@ -75,10 +82,27 @@ ul {
 .site-nav .link {
   color: var(--title-color);
   text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--acent-color);
+}
+/* позиционирование nav */
+.site-nav {
+  display: flex;
+  flex-direction: row;
+}
+.site-nav .site-nav-link {
+  /* background-color: red; */
+  /* outline: 2px solid rgb(25, 0, 255); */
+  margin-left: 50px;
+}
+.site-nav .site-nav-link:first-child {
+  margin-left: 93px;
 }
 /* оформлення контактів */
 .site-info .site-info-header {
@@ -89,32 +113,62 @@ ul {
 .site-info :focus {
   color: var(--acent-color);
 }
+/* позиционирование контакти  */
+.site-info.list {
+  display: flex;
+  margin-left: auto;
+}
+.site-info.list .site-info-contact {
+  /* background-color: red; */
+  /* outline: 2px solid rgb(25, 0, 255); */
+  margin-left: 50px;
+}
+.site-info.list .site-info-contact:first-child {
+  margin-left: 0px;
+}
+
 /* оформлення main */
+.section.no-padding {
+  padding-top: 0px;
+}
 /* оформлення героя */
 .heroes {
   background-color: #2f303a;
+  max-height: 600px;
+  min-height: 600px;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .heroes-title {
   color: var(--title-wite);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .heroes .heroes-button {
   color: var(--title-wite);
   background-color: var(--acent-color);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: flex;
+
+  display: inline-block;
   align-items: center;
-  text-align: center;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
 }
 .heroes .heroes-button:focus,
 .heroes .heroes-button:hover {
@@ -125,11 +179,70 @@ ul {
 .section-title {
   color: var(--title-color);
 }
+/* позиціонування блоків сайту  */
+/* Особенности */
+
+.text-set {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc(100% / 4);
+}
 .list .section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.text-set .text-set-card {
+  margin-left: 30px;
+  display: inline-block;
+
+  /* background-color: red; */
+  outline: 2px solid rgb(25, 0, 255);
+}
+.text-set .text-set-card:first-child {
+  margin-left: 0px;
+}
+.text-set-card > p {
+  max-width: 270px;
+}
+/* Чем ми занимаемся позиционирование */
+.section.none {
+  padding-top: 0px;
+}
+.section.non-pading-top {
+  /* background-color: red; */
+  outline: 2px solid rgb(25, 0, 255);
+}
+.pic-list.list {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  justify-content: space-between;
+}
+/* Наша команда позиционирование */
+.section.bgc {
+  padding-top: 0px;
+  background-color: var(--secondary-bgc);
+}
+.have-padding {
+  padding-top: 94px;
+}
+.team.list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: calc(100% / 4);
+  /* background-color: red; */
+  outline: 2px solid rgb(25, 0, 255);
+}
+.team.list .team-specialist {
+  margin-left: 30px;
+  display: block;
+}
+
+.team.list .team-specialist:first-child {
+  margin-left: 0px;
 }
 .list .text {
   font-size: 14px;
@@ -140,7 +253,10 @@ ul {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  /*відступ заголовка */
+  margin-bottom: 50px;
 }
+
 .team .headline {
   font-weight: 500;
   font-size: 16px;
@@ -192,6 +308,10 @@ ul {
   text-align: center;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
 }
 .filter .filter-button:hover,
 .filter .filter-button:focus {
