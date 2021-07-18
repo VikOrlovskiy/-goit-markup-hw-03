@@ -36,6 +36,11 @@ ul {
   padding: 0px;
   margin: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* упаковка контейнер */
 .container {
   width: 1200px;
@@ -43,13 +48,13 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid rgb(76, 0, 255);
+  /* outline: 1px solid rgb(76, 0, 255); */
 }
 /* загальне вимога по ТЗ */
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 /* прибрати маркера списків сторінки */
 .list {
@@ -181,11 +186,13 @@ ul {
 }
 /* позиціонування блоків сайту  */
 /* Особенности */
-
+.text-set-card .text {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 270px;
+}
 .text-set {
   display: flex;
-  flex-direction: row;
-  flex-basis: calc(100% / 4);
 }
 .list .section-title {
   font-weight: 700;
@@ -197,16 +204,15 @@ ul {
 }
 .text-set .text-set-card {
   margin-left: 30px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 90px);
 
   /* background-color: red; */
-  outline: 2px solid rgb(25, 0, 255);
+  /* outline: 2px solid rgb(25, 0, 255); */
 }
 .text-set .text-set-card:first-child {
   margin-left: 0px;
-}
-.text-set-card > p {
-  max-width: 270px;
 }
 /* Чем ми занимаемся позиционирование */
 .section.none {
@@ -214,7 +220,7 @@ ul {
 }
 .section.non-pading-top {
   /* background-color: red; */
-  outline: 2px solid rgb(25, 0, 255);
+  /* outline: 2px solid rgb(25, 0, 255); */
 }
 .pic-list.list {
   display: flex;
@@ -231,22 +237,20 @@ ul {
 }
 .team.list {
   display: flex;
-  justify-content: space-between;
-  flex-basis: calc(100% / 4);
-  /* background-color: red; */
-  outline: 2px solid rgb(25, 0, 255);
+  /* background-color: rgb(0, 255, 0); */
+  /* outline: 2px solid rgb(25, 0, 255); */
 }
 .team.list .team-specialist {
   margin-left: 30px;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 90px);
+  background-color: var(--primary-bgc);
+  /* background-color: rgb(238, 255, 0); */
+  /* outline: 2px solid rgb(255, 0, 64); */
 }
-
 .team.list .team-specialist:first-child {
   margin-left: 0px;
-}
-.list .text {
-  font-size: 14px;
-  line-height: 1.7;
 }
 .subtitle {
   line-height: 1.16;
@@ -256,15 +260,33 @@ ul {
   /*відступ заголовка */
   margin-bottom: 50px;
 }
-
-.team .headline {
+.card-specialist .headline {
+  color: #212121;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-transform: uppercase;
+
+  /* outline: 2px solid rgb(255, 0, 64); */
 }
 .team .text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
+
+  padding-top: 10px;
+  /* outline: 2px solid rgb(255, 0, 64); */
+}
+.card-text-specialist {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* outline: 2px solid rgb(255, 0, 64); */
+}
+/* позиционирование футер */
+.footer-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* оформлення футер */
 .below {
@@ -285,6 +307,7 @@ ul {
   text-decoration: none;
 }
 .location {
+  padding-top: 20px;
   line-height: 1.7;
   font-style: normal;
 }
@@ -292,6 +315,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.7;
+  padding-top: 9px;
 }
 .below-link :hover,
 .below-link :focus {
