@@ -22,9 +22,11 @@
   </head>
   <body>
     <!-- шапка сайта -->
-    <div class="container header-top">
+    <header class="line">
+      <div class="container header-top">
         <a class="logo" href="index.html"
-          ><span class="logo-blue">Web</span>Studio</a>
+          ><span class="logo-blue">Web</span>Studio</a
+        >
         <nav>
           <ul class="site-nav list">
             <li class="site-nav-link">
@@ -57,122 +59,176 @@
       <section class="section">
         <!-- фильтр -->
         <div class="container">
-          <h1 class="section-title">portfolio</h1>
-          <ul class="filter list">
-            <li><button class="filter-button" type="button">Все</button></li>
-            <li>
-              <button class="filter-button" type="button">Веб-сайты</button>
-            </li>
-            <li>
-              <button class="filter-button" type="button">Приложения</button>
-            </li>
-            <li><button class="filter-button" type="button">Дизайн</button></li>
-            <li>
-              <button class="filter-button" type="button">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter-line">
+            <h1 style="display: none" class="section-title">portfolio</h1>
+            <ul class="filter list">
+              <li class="filter-element">
+                <button class="filter-button" type="button">Все</button>
+              </li>
+              <li class="filter-element">
+                <button class="filter-button" type="button">Веб-сайты</button>
+              </li>
+              <li class="filter-element">
+                <button class="filter-button" type="button">Приложения</button>
+              </li>
+              <li class="filter-element">
+                <button class="filter-button" type="button">Дизайн</button>
+              </li>
+              <li class="filter-element">
+                <button class="filter-button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- проекти -->
         <div class="container">
           <ul class="portfolio list">
-            <li>
-              <a class="link" href="#">
-                <img
-                  src="./images/portfolio/img-1.jpg"
-                  width="294"
-                  alt="Технокряк"
-                />
-                <h2 class="section-title">Технокряк</h2>
-                <p class="text">Веб-сайт</p>
-              </a>
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                  <div class="images-thumb">
+                    <img
+                      src="./images/portfolio/img-1.jpg"
+                      width="370"
+                      alt="Технокряк"
+                    />
+                  </div>
+                  <div class="text-thumb">
+                    <h2 class="portfolio-title">Технокряк</h2>
+                    <p class="portfolio-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
-                  src="./images/portfolio/img-2.jpg"
-                  width="294"
-                  alt="Постер New Orlean vs Golden Star"
-                />
-                <h2 class="section-title">Постер New Orlean vs Golden Star</h2>
-                <p class="text">Дизайн</p>
-              </a>
+            <li class="item">
+                <article>
+                  <a class="link" href="#"></a>
+                  <div class="images-thumb">
+                    <img
+                      src="./images/portfolio/img-2.jpg"
+                      width="370"
+                      alt="Постер New Orlean vs Golden Star"/>
+                  </div>
+                  <div class="text-thumb">
+                    <h2 class="portfolio-title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="portfolio-text">Дизайн</p>
+                  </div>
+                </a>
+                </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-3.jpg"
-                  width="294"
-                  alt="Ресторан Seafood"
-                />
-                <h2 class="section-title">Ресторан Seafood</h2>
-                <p class="text">Приложение</p>
+                  width="370"
+                  alt="Ресторан Seafood"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
               </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-4.jpg"
-                  width="294"
-                  alt="Проект Prime"
-                />
-                <h2 class="section-title">Проект Prime</h2>
-                <p class="text">Маркетинг</p>
+                  width="370"
+                  alt="Проект Prime"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Проект Prime</h2>
+                <p class="portfolio-text">Маркетинг</p>
+                </div>
               </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-5.jpg"
-                  width="294"
-                  alt="Проект Boxes"
-                />
-                <h2 class="section-title">Проект Boxes</h2>
-                <p class="text">Приложение</p>
+                  width="370"
+                  alt="Проект Boxes"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Проект Boxes</h2>
+                  <p class="portfolio-">Приложение</p>
+              </div>
               </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-6.jpg"
-                  width="294"
-                  alt="Inspiration has no Borders"
-                />
-                <h2 class="section-title">Inspiration has no Borderse</h2>
-                <p class="text">Веб-сайт</p>
+                  width="370"
+                  alt="Inspiration has no Borders"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Inspiration has no Borderse</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
               </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-7.jpg"
-                  width="294"
-                  alt="Издание Limited Edition"
-                />
-                <h2 class="section-title">Издание Limited Edition</h2>
-                <p class="text">Дизайн</p>
+                  width="370"
+                  alt="Издание Limited Edition"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Издание Limited Edition</h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
               </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
-                  src="./images/portfolio/img-8.jpg"
-                  width="294"
-                  alt="Проект LAB"
-                />
-                <h2 class="section-title">Проект LAB</h2>
-                <p class="text">Маркетинг</p>
-              </a>
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                  <div class="images-thumb">
+                    <img
+                      src="./images/portfolio/img-8.jpg"
+                      width="370"
+                      alt="Проект LAB"/>
+                  </div>
+                  <div class="text-thumb">
+                    <h2 class="portfolio-title">Проект LAB</h2>
+                    <p class="portfolio-text">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li>
-              <a class="link" href="#">
-                <img
+            <li class="item">
+              <article>
+                <a class="link" href="#">
+                <div class="images-thumb">
+                  <img
                   src="./images/portfolio/img-9.jpg"
-                  width="294"
-                  alt="Growing Business"
-                />
-                <h2 class="section-title">Growing Business</h2>
-                <p class="text">Приложение</p>
+                  width="370"
+                  alt="Growing Business"/>
+                </div>
+                <div class="text-thumb">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
               </a>
+              </article>
             </li>
           </ul>
         </div>

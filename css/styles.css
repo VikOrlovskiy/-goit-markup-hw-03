@@ -7,7 +7,8 @@
 /* #FFFFFF основний колір фону */
 /* #F5F4FA вторинний колір фону сторінки */
 /* #2F303A колір героя и підвалу фону */
-
+/* #EEEEEE колір лінії карток порттфоліо */
+/* #ECECEC колір лінії хедера */
 /* Roboto 400/500/700/900 основний шоифт */
 /* Raleway  700 додатковий шрифт*/
 :root {
@@ -18,6 +19,8 @@
   --acent-color: #2196f3;
   --title-wite: #ffffff;
   --button-bgc: #f5f4fa;
+  --portfolio-card-bgc: #eeeeee;
+  --header-line-color: #ececec;
 }
 
 body {
@@ -61,6 +64,9 @@ img {
   list-style: none;
 }
 /* розмітка HEADER */
+.line {
+  border: 1px solid var(--header-line-color);
+}
 .header-top {
   display: flex;
   align-items: center;
@@ -189,7 +195,6 @@ img {
 .text-set-card .text {
   font-size: 14px;
   line-height: 1.7;
-  max-width: 270px;
 }
 .text-set {
   display: flex;
@@ -252,6 +257,7 @@ img {
 .team.list .team-specialist:first-child {
   margin-left: 0px;
 }
+/* Наша команда оформление */
 .subtitle {
   line-height: 1.16;
   font-size: 36px;
@@ -283,6 +289,7 @@ img {
   padding-bottom: 30px;
   /* outline: 2px solid rgb(255, 0, 64); */
 }
+
 /* позиционирование футер */
 .footer-padding {
   padding-top: 30px;
@@ -315,6 +322,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.7;
+
   padding-top: 9px;
 }
 .below-link :hover,
@@ -322,7 +330,19 @@ img {
   color: var(--acent-color);
 }
 /*сторінка 2 портфоліо */
-/* фильтр */
+/* фильтр  позиционирование*/
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter .filter-element {
+  margin-left: 8px;
+}
+.filter .filter-element:first-child {
+  margin-left: 0px;
+}
+/* фильтр оформление */
 .filter .filter-button {
   color: var(--title-color);
   background-color: var(--button-bgc);
@@ -342,18 +362,39 @@ img {
   color: var(--title-wite);
   background-color: var(--acent-color);
 }
+
 /* оформлення  */
 .portfolio .link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-.link .section-title {
+.item .portfolio-title {
+  color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.link .text {
+.item .portfolio-text {
   font-size: 16px;
   line-height: 1.8;
+
+  margin-top: 8px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  /* background-color: rgb(0, 255, 128); */
+}
+.portfolio .item {
+  margin-left: 30px;
+  margin-top: 30px;
+  /* background-color: red; */
+  flex-basis: calc(100% / 3 -60x);
+}
+.item .text-thumb {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-card-bgc);
 }
