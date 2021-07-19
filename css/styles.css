@@ -44,7 +44,7 @@ ul {
   margin: 0px;
 }
 /* скрить заголовки где ненужни */
-.dont-show {
+.section-title.dont-show {
   display: none;
 }
 img {
